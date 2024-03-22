@@ -1,5 +1,4 @@
-# lists
-# sequence 
+# lists & sequence 
 student: !!seq
  - name
  - marks
