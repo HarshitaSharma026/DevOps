@@ -1,0 +1,76 @@
+# variables & datatypes
+# anything that is written right hand side of : is a variable 
+
+# string variables
+std_name: Harshita
+student: "yes"
+job: 'student only'
+
+# to add content in multiple lines
+bio: i'm Harshita
+i'm a good girl       
+# the above code is giving me an error, because we can't add a new line like this alone
+# it should be either a list, or it should be written in a name : value type of format
+
+# the correct way to preserve new line and all the indentation is to use "|" symbol
+message: |
+ this will
+ be displayed
+ as
+ a single line
+#  keep in mind the indentation from new line
+
+
+# write a single line in multiple lines
+message: >
+ this will
+ be displayed
+ as
+ a single line
+# the above code is similar to writing it as:
+# message: this will be displayed as single line
+
+# other variables
+number: 9889
+decimal: 34.78
+
+# booleans
+booleanValueFalse: No         # False, false, n, N, FALSE 
+booleanValueTrue: Yes         # True, true, y, Y, TRUE
+
+# by default, YAML itself identify the type of variable
+# but this is how we can explicitly mention the type
+one: !!int 1
+positiveValue: !!int 67
+negativeValue: !!int -56
+binaryNumber: !!int 0b11001    # binary number starts with 0b
+octal: !!int 06346             # octal number starts with 0
+hexaNumber: !!int 0x67        # hexa number starts with 0x
+commavalues: !!int +540_000    #540,000
+exponential numbers: 6.56E45
+
+# floating point numbers
+marks: !!float 78.90
+infinity: !!float .inf     #to represent infinity
+not a number: .nan       # not a number
+
+# boolean values
+boolYes: !!bool yes
+boolNo: !!bool n
+
+# string values
+value: !!str hi good morning
+
+# null values
+null1: Null     
+null2: NULL 
+null3: null
+null4: ~
+# sometimes keys may be null
+~: this is a null key
+
+# date and time
+date: !!timestamp 2024-03-11
+india time: 2024-03-11T02:59:43.10 +5:30
+
+

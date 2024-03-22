@@ -1,0 +1,27 @@
+# in dictionary format
+"apple": "I'm a fruit"
+"23MCA0069": "My registration number"
+23: "My age"
+
+# document separator
+--- 
+
+# list format
+ - apple
+ - banana
+ - grapes
+ - orange
+
+---
+# block format
+cities:
+ - Jaipur
+ - Udaipur
+ - Jodhpur
+
+# marks the ending of the document
+...           
+
+
+# INDENTATION plays a major role here. 
+# for indentation we use "space" and not "tab"

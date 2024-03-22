@@ -1,0 +1,120 @@
+# lists
+# sequence 
+student: !!seq
+ - name
+ - marks
+ - registration number 
+
+# or above list can also be written as
+student: [name, marks, registration number]
+
+# sparse seq: where some of the keys maybe empty
+sparse seq:
+ - java
+ - python
+ -
+ - c++
+ - Null
+---
+# nested sequence 
+- 
+ - java
+ - python
+ - c++
+-
+ - html
+ - css
+ - javascript
+
+# key: value pairs are called maps (one like Hashmap) 
+!!map
+
+# nested mapping
+std: Harshita sharma
+skills:
+ technical:
+  - java
+  - python
+  - yaml
+ soft:
+  communication: good
+  language: good
+
+
+# other way to represent it
+std: Harshita sharma
+skills:
+ technical: [java, python, yaml]
+ soft: {communication: good, language: good}
+
+# nested mapping: map within a map
+name: Harshita sharma
+role:
+ age: 67
+ jobs: student
+
+# same as :
+ name: Harshita sharma
+role: {age: 67, jobs: student}
+
+# pairs: when key has duplicate values 
+# !!pairs
+pair example:
+ - job: student
+ - job: blogger
+# this will be an array of hashtables
+
+# this can also be repsented as
+pairexpample: [{job: student}, {job: blogger}]
+
+# same as 
+pair example: !!pair [job: student, job: blogger]
+
+# !!set will allow you to have unique values, no key value pairs, only values
+set example: !!set
+ ? Harshita
+ ? Sanya
+ ? Reshmaa
+ ? Devika
+
+# dictionary -> !!omap
+teachers: !!omap
+ - john:
+    name: John SF
+    age: 50
+    subject: Statistics
+ - jack:
+    name: Jack Rob
+    age: 67
+    subject: Psychology
+
+# the above can look like this
+teachers1: [john: {name: john sf, age: 50, subject: stats}, jack: {name: jack ab, age: 90}]
+
+# resusing some properties using anchors
+# this &like means, we are specifying that this map will be used somewhere else in the program
+# hence we are giving a name "likes" to it
+likings: &like
+ fav fruit: orange
+ fav movie: iron man
+ fav show: one piece
+
+person1:
+ name: Anny Anderson
+ <<: *like
+# the above line means the map will have the "like" map in here 
+# achors: '&', used to refer to a block we want to reuse
+# aliases: '*', used to refer to the place we want to set properties on
+
+
+person2:
+ name: Candice
+ <<: *like
+ fav movie: thor
+# here we are overwriting the fav movie from iron man to thor
+# sof first it'll copy the like map here and then overwrite the fav movie to thor
+
+
+
+
+

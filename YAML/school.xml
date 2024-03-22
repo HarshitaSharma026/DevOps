@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<school name ="rainbow" principle="someone">
+    <students>
+        <student1>
+            <name>Harshita</name>
+            <regno>23MCA0069</regno>
+            <marks>89</marks>
+    </students>
+</school>

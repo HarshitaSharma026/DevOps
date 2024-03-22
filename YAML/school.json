@@ -1,0 +1,19 @@
+{
+    "school": [
+        {
+            "name": "rainbow",
+            "principle": "someone",
+            "students": [
+                {
+                    "name": "Harshita",
+                    "regno": "23mca0069"
+                },
+                {
+                    "name": "Ayushman",
+                    "regno": "23MCA0070"
+                }
+            ]
+        }
+        
+    ]
+}

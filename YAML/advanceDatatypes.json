@@ -1,0 +1,15 @@
+{
+    "student": [
+      "name",
+      "marks",
+      "registration number"
+    ],
+    "sparse seq": [
+        "java",
+        "python",
+        null,
+        "c++",
+        null
+      ]
+
+  }

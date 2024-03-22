@@ -1,0 +1,12 @@
+school:
+ name: "rainbow"
+ principle: someone
+ student:
+  student1:
+   name: harshita
+   regno: 23mca0069
+   marks: 90
+  student2:
+   name: ayushman
+   regno: 23mca0070
+   marks: 100
